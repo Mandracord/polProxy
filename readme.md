@@ -1,3 +1,6 @@
+# Update 5/29/2025
+
+I've made a new project that auto setups the POL Proxy, and can auto-log you in, along with 2FA. Check out https://github.com/jaku/FFXI-autoPOL for more details! Works great on the Steam Deck!
 
 # FFXI PlayOnline Proxy
 
