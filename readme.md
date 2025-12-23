@@ -152,7 +152,7 @@ https://www.docker.com/products/docker-desktop
 
 Ensure Docker Desktop is running before continuing.
 
-Clone and run:
+Clone and run
 
 Open Powershell as Administrator:
 
