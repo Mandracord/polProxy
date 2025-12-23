@@ -86,7 +86,10 @@ echo "127.0.0.1 wh000.pol.com" | sudo tee -a /etc/hosts
 ```bash
 git clone https://github.com/Mandracord/polProxy
 cd polProxy
-docker compose up --build
+docker compose \
+  -f compose.polproxy.yml \
+  -f compose.polproxy.host.yml \
+  up --build
 ```
 Expected output:
 
@@ -94,7 +97,8 @@ Expected output:
 POL Proxy is running on port 51304
 ```
 > [!NOTE]
-> You can now run docker compose up -d to keep it running in the background.
+> You can now run `docker compose -f compose.polproxy.yml -f compose.polproxy.host.yml up -d`
+> to keep it running in the background.
 
 Launch PlayOnline normally.
 
@@ -134,10 +138,10 @@ echo "127.0.0.1 wh000.pol.com" | sudo tee -a /etc/hosts
 ```bash
 git clone https://github.com/Mandracord/polProxy
 cd polProxy
-docker compose up --build
+docker compose -f compose.polproxy.yml up --build
 ```
 > [!NOTE]
-> You can now run docker compose up -d to keep it running in the background.
+> You can now run `docker compose -f compose.polproxy.yml up -d` to keep it running in the background.
 
 ---
 
