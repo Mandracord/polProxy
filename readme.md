@@ -153,6 +153,9 @@ https://www.docker.com/products/docker-desktop
 Ensure Docker Desktop is running before continuing.
 
 Clone and run:
+
+Open Powershell as Administrator:
+
 ```bash
 git clone https://github.com/Mandracord/polProxy
 cd polProxy
