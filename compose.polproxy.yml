@@ -1,0 +1,12 @@
+services:
+  polproxy:
+    container_name: polproxy
+    build: .
+    restart: unless-stopped
+    ports:
+      - "51304:51304"
+    healthcheck:
+      test: ["CMD", "nc", "-z", "127.0.0.1", "51304"]
+      interval: 10s
+      timeout: 3s
+      retries: 3
